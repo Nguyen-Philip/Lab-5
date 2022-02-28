@@ -1,0 +1,119 @@
+body {
+  color: black;
+  background-color: lightblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+nav {
+  position: relative;
+  right: 45px;
+}
+
+main {
+  
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  width:300px;
+  height:150px;
+}
+
+li {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 1px;
+  width: 20%;
+  margin: 5px;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: white;
+  width: 20%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 1px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas:  "header header header"
+                        "nav main main"
+                        "footer footer footer"
+  
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer
+}
+
+li#removeStyles {
+  pointer-events: none;
+  background-color: none;
+  width: none;
+  border-color: none;
+  border-width: none;
+  border-style: none;
+  border-radius: none;
+}
+
+div#left {
+  float: left;
+  width: 30%;
+}
+
+div#right {
+  margin-left: 200px;
+  width: 40%;
+}
+
+p#veg {
+  background-color: green;
+}
+
+p#meat {
+  background-color: red;
+}
+
+p#dairy {
+  background-color: yellow;
+}
